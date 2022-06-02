@@ -1,0 +1,29 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <main>
+        <h1>Deportes</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Grupo</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for n in deportes %}
+                    <tr>
+                        <th scope="row">{{n.id}}</th>
+                        <td>{{n.nombre}}</td>
+                        <td>{{n.grupo}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+{% endblock %}

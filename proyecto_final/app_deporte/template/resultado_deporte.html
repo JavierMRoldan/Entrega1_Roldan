@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    {% if deportes %}
+
+    <ul>
+        {% for deporte in deportes %}
+            <li>Nombre: {{deporte.nombre}}</li>
+            <li>Grupo: {{deporte.grupo}}</li>
+            <p>-----------------------------------</p>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No se encontraron deportes</p>
+    {% endif %}
+
+    <a class="btn btn-primary" href="{% url 'buscar_formularios' %}">Volver a Buscar Formularios</a>
+
+</body>
+</html>
+    
+    
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% if estudiantes %}
+            <ul>
+            {% for estudiante in estudiantes %}
+                <li>Nombre: {{estudiante.nombre}}</li>
+                <li>Apellido: {{estudiante.apellido}}</li>
+                <li>Deporte: {{estudiante.nombre_deporte}}</li>
+                <p>-----------------------------------</p>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No se encontraron profesores</p>
+        {% endif %}
+    
+    <a class="btn btn-primary" href="{% url 'buscar_formularios' %}">Volver a Buscar Formularios</a>
+
+</body>
+</html>
+    
+    

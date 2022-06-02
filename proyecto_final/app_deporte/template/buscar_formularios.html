@@ -1,0 +1,15 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+    <main>
+
+        <a class="btn btn-primary" href="{% url 'buscar_deporte' %}">Buscar Deporte</a>
+        <a class="btn btn-primary" href="{% url 'buscar_estudiante' %}">Buscar Estudiante</a>
+        <a class="btn btn-primary" href="{% url 'buscar_profesor' %}">Buscar Profesor</a>
+
+    </main>
+    
+
+{% endblock %}
