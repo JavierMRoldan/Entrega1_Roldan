@@ -12,4 +12,4 @@ En la seccion "Generar Formularios" se presentan 3 botones, en los cuales cada u
 En la seccion "Buscar Formularios" se presentan 3 botones, estos botones permite visualizar un formulario de busqueda por nombre, y el tipo de nombre va a depender la eleccion del boton. Se puede buscar por nombre de deporte, estudiante o profesor. Luego se va a visualizar todos los campos que compartan el mismo nombre junto con sus propias caracteristicas. Y un boton "Volver a Buscar Formularios" para volver a la seccion "Buscar Formularios" y repetir el preceso si es que se lo desea. 
 
 
-*Iportante* para poder ver la lista de las secciones,una vez agregada una nueva instancia a la base de datos, hace falta recargar la pagina
+*Importante* para poder ver la lista de las secciones,una vez agregada una nueva instancia a la base de datos, hace falta recargar la pagina
